@@ -21,3 +21,14 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#firebase
+./firebase
+.firebaseerc
+firebase.json
+firestore.indexes.json
+firestore.rules
+
+drawing.svg
+footer.svg
+
