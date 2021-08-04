@@ -3,13 +3,13 @@ import 'firebase/storage';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD3CE6uWfyjCnL3u-ib3MUCLSWomHIyZLE",
-    authDomain: "monica-navarro.firebaseapp.com",
+    apiKey: "API_KEY",
+    authDomain: "domain",
     databaseURL: "https://monica-navarro.firebaseio.com",
     projectId: "monica-navarro",
-    storageBucket: "monica-navarro.appspot.com",
-    messagingSenderId: "864212194756",
-    appId: "1:864212194756:web:bb76d44737cf2a166b0091"
+    storageBucket: "storage",
+    messagingSenderId: "id",
+    appId: "id"
   };
 
 // Initialize Firebase
