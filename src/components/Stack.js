@@ -8,7 +8,7 @@ import typescript from '../static/typescript.png';
 
 const Stack = () => {
     return ( 
-        <div className="stack">
+        <section className="stack">
             <h2 className='purple'>Technologies I use...</h2>
             <div className="scatter">
                 <img src={ firebase } className='firebase' alt="Firebase Logo" />
@@ -19,7 +19,7 @@ const Stack = () => {
                 <img src={ typescript } className='typescript' alt="TypeScript Logo" />
                 <img src={ js } className='js' alt="JavaScript Logo" />
             </div>
-        </div>
+        </section>
      );
 }
  

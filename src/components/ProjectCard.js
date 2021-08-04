@@ -1,11 +1,16 @@
-const ProjectCard = () => {
+const ProjectCard = ({ project }) => {
+    // console.log(project)
     return ( 
         <div className='project-card'>
+            <h2>{ project.title }</h2>
             <div className="img">
-
+                <a target="_blank" rel="noreferrer" href={project.live_site}>
+                    <img src={project.img} alt="" />
+                    Visit site
+                </a>
             </div>
-            <h2>Project title</h2>
-            <p>#tag1 #tag2 #tag3</p>
+
+            <p>Tags: { project.tags.map((tag) => <span key={ tag }> { tag } </span>)}</p>
         </div>
      );
 }

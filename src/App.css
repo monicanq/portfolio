@@ -12,15 +12,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: white;
 }
-/* .App{
-} */
+/* .App */
 .container{
     max-width: 1200px;
     margin: auto;
     padding: 0 50px;
 }
 /*General*/
-
 body{
     font-family: 'Nunito', 'Roboto', 'Oxygen';
     color: var(--dark-grey);
@@ -32,12 +30,14 @@ a {
 .purple{
     color: var(--primary);
 }
+section {
+    padding: 30px 0;
+}
 span.link a{
     text-decoration: none;
     color: var(--primary);
     font-weight: 700;
 }
-
 button {
     display: inline-block;
     border: none;
@@ -56,53 +56,18 @@ button {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
-
 button:hover,
 button:focus {
     background: #8e02cf62;
 }
-
 button:focus {
     outline: 1px solid #fff;
     outline-offset: -4px;
 }
-
 button:active {
     transform: scale(0.99);
 }
 
-
-/*Construction styles*/
-.construction-banner{
-    text-align: center;
-    padding: 60px 0;
-}
-@keyframes flickerAnimation {
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
-  @-o-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
-  @-moz-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
-  @-webkit-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
-  .animate-flicker {
-     -webkit-animation: flickerAnimation 1s infinite;
-     -moz-animation: flickerAnimation 1s infinite;
-     -o-animation: flickerAnimation 1s infinite;
-      animation: flickerAnimation 1s infinite;
-  }
 
 /*Navbar styles*/
 .nav-bar{
@@ -118,16 +83,12 @@ button:active {
     color: var(--dark-grey);
     display: inline-block;
 }
-
 a.active {
     color: var(--primary);
     font-weight: 700;
 }
 
 /*About section styles */
-.about {
-    padding: 30px 0;
-}
 .intro{
     display: flex;
     padding: 30px;
@@ -160,10 +121,6 @@ footer{
 }
 
 /*Stack section*/
-.stack{
-    padding: 30px 0;
-}
-
 .scatter{
     position: relative;
     height: 90vh;
@@ -175,7 +132,6 @@ footer{
     padding: 10px;
     position: absolute;
 }
-
 .scatter img:hover{
     transform: scale(1.05);
 }
@@ -187,27 +143,22 @@ footer{
     right: 5vw;
     top: 5vh;
 }
-
 .typescript{
     left: 5vw;
     top: 50vh;
 }
-
 .reactjs{
     left: 2vw;
     top: 0vh;
 }
-
 .firebase{
     right: 25vw;
     top: 30vh;
 }
-
 .mongodb{
     left: 25vw;
     top: 62vh;
 }
-
 .html{
     right: 5vw;
     top: 62vh;
@@ -215,7 +166,6 @@ footer{
 
 /* Project link */
 .project-link{
-    padding: 30px 0;
     display: flex;
     align-items: center;
 }
@@ -244,19 +194,35 @@ div.github{
     width: 70vw;
     text-align: center;
 }
-.project-card .img{
+.project-card{
+    max-width: 300px;
+}
+.project-card img{
     width: 300px;
     height: 300px;
     background-color: #aaa;
 }
-.project-gallery{
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
 .project-card{
     padding: 10px;
+}
+.project-card a{
+    color: var(--primary);
+}
+.project-card span{
+    background-color: #8e02cf4f;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 0 2px;
+}
+.project-card p{
+    line-height: 2rem;
+}
+
+.project-card .tag {
+    line-height: 2rem;
+  }
+.projects .github a:hover{
+    color: var(--primary)
 }
 
 
@@ -270,7 +236,6 @@ div.github{
 .contact{
     padding: 30px 0;
 }
-
 .contact form label,
 .contact form input,
 .contact form textarea{
@@ -279,7 +244,6 @@ div.github{
 input:focus, textarea:focus, select:focus{
     outline: none;
 }
-
 .contact form input, 
 .contact form textarea{
     padding: 10px;
@@ -290,66 +254,20 @@ input:focus, textarea:focus, select:focus{
     border: none;
     border-bottom: var(--primary) 2px solid;
 }
-
 .contact form textarea{
     height: 30vh;
 }
-
 .contact form button{
     display: block;
     width: 50vw;
     margin: auto;
 }
 
-
-
 /*404*/
 .not-found{
     min-height: 50vh;
     text-align: center;
     padding-top: 30px;
-}
-
-/* Loader */
-.spinner{
-    width: 100px;
-    height: 100px;
-    position: relative;
-    margin: auto;
-    top: 20%;
-}
-.spinner div{
-    box-sizing: border-box;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 10px solid transparent;
-    border-top-color: var(--primary);
-    border-radius: 50%;
-    animation: spinnerOne 2s linear infinite;
-}
-.spinner div:nth-child(2){
-    border: 10px solid transparent;
-    border-bottom-color: var(--primary);
-    animation: spinnerTwo 2s linear infinite;
-}
-
-@keyframes spinnerOne {
-    0% { transform: rotate(0deg); border-width: 10px;}
-    50% { transform: rotate(180deg); border-width: 1px;}
-    100% { transform: rotate(360deg); border-width: 10px;}
-}
-@keyframes spinnerTwo {
-    0% { transform: rotate(0deg); border-width: 1px;}
-    50% { transform: rotate(180deg); border-width: 10px;}
-    100% { transform: rotate(360deg); border-width: 1px;}
-}
-
-@media only screen and (min-width: 600px) {
-    .nav-bar a:hover{
-        color: #000;
-        font-weight: 700;
-    }
 }
 
 /*Mobile styles*/
@@ -360,23 +278,20 @@ input:focus, textarea:focus, select:focus{
     .about{
         position: relative;
     }
-    .about .social-links{
+    .about-info > div{
         position: absolute;
-        bottom: 0;
+        bottom: -10px;
         left: 0;
         width: 100%;
     }
     .intro{
         flex-direction: column;
-        padding: 30px 0;
+        padding: 0;
     }
     .intro div{
         padding-left: 0;
         text-align: center;
     }
-    /* .scatter img{
-        max-width: 20vw;
-    } */
     .project-link{
         padding: 30px 0;
         flex-direction: column;
@@ -390,12 +305,14 @@ input:focus, textarea:focus, select:focus{
         text-align: center;
         max-width: 100vw;
     }
-
-    /* .scatter{
-        position: relative;
-        height: 80vh;
-        width: 100%;
-        margin: auto;
-    } */
-
+    .scatter img{
+        max-width: 25vw;
+    }
+    .firebase{
+        right: 15vw;
+    }
+    .mongodb{
+        left: 15vw;
+        top: 75vh;
+    }
   }

@@ -1,13 +1,16 @@
 import Stack from './Stack';
 import ProjectLink from './ProjectLink';
 import About from './About';
+import ScrollToTop from './ScrollToTop';
 
 const Home = () => {
     return ( 
-        <>
-            <About />
-            <Stack />
-            <ProjectLink />
+        <>  
+            <ScrollToTop>
+                <About />
+                <Stack />
+                <ProjectLink />
+            </ScrollToTop>
         </>
      );
 }

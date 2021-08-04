@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
-import Loader from './components/Loader';
+import Spinner from './components/Spinner';
 import {
     BrowserRouter as Router,
     Switch,
@@ -28,7 +28,7 @@ function App() {
                             <Home />
                         </Route>
                         {/* Components loaded with Lazy loading */}
-                        <Suspense fallback={<Loader />}>                        
+                        <Suspense fallback={<Spinner />}>                        
                             <Route exact path="/projects">
                                 <Projects />
                             </Route>
