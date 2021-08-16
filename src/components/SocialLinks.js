@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 library.add(fab, faCheckSquare, faCoffee, faEnvelope)
 
 const SocialLinks = () => {
-    const githubUrl = 'https://github.com/monicanq';
-    const linkedinUrl = 'https://www.linkedin.com/in/monicanq/';
+    const githubUrl = 'https://github.com/monicanq'
+    const linkedinUrl = 'https://www.linkedin.com/in/monicanq/'
     const email = 'monicanq@gmail.com'
 
     // Function to create an email link
